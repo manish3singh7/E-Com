@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Bricolage Grotesque", system-ui, sans-serif;
+  --color-ink: #1b2250; --color-paper: #f5f6fb; --color-mustard: #e0a82e; --color-line: #d9dcea; --color-muted: #5d6384;
+}
+body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); }
+.btn { @apply inline-flex items-center justify-center rounded-md bg-ink px-4 py-2 font-semibold text-white hover:bg-[#2a3470] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mustard disabled:opacity-50; }
+.btn-alt { @apply inline-flex items-center justify-center rounded-md border border-ink px-4 py-2 font-semibold hover:bg-white; }
+.field { @apply w-full rounded-md border border-line bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-mustard; }
